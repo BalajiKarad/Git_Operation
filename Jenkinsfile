@@ -11,13 +11,11 @@ pipeline {
        input("Do you want to proceed?")
      }
    }
- stage("Three"){
-   when{
-     not{ branch "Master" }
+    stage("Three"){
      steps { echo"Hellow"  }
    }
  }
 }
-}            
+          
             
       
